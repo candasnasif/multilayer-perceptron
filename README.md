@@ -1,18 +1,15 @@
-Student Name & Surname : Candas Nasif
-Student ID : 21328232
-
--I use Python3 language for this assignment.
--My code can run with following command:
+- I used Python3 language for this assignment.
+- My code can run with following command:
 		python3 assignment4.py positive.txt negative.txt vectors.txt 75
 
--I use multilayer perceptron and tensorflow for this assignment.
--I use '10' for positive sentences' label and '01' for negative sentences' label.
--I use GradientDescentOptimizer for this assignment.
--My vectors default dimensions is 200.
--I prefered ReLu activation function for this assignment.But I got higher accuracy when I used linear activation on out layer in multilayer perceptron.If you want to execute the code with Linear activation you should uncomment the line 31("output_layer = tf.matmul(hidden_layer_2, weights['out']) + biases['out']")  and comment lines 28("output_layer = tf.add(tf.matmul(hidden_layer_2, weights['out']), biases['out'])") and 29("output_layer = tf.nn.relu(output_layer)").
--In our assignment learning rate is given us 0.001 default.For this learning rate I give 15 to training eproch.Because I achieved highest accuracy for this learning rate.
--I write ouputs in console and 'output.txt' file with static name.
--Example output of the code:
+- I used multilayer perceptron and tensorflow for this assignment.
+- I used '10' for positive sentences' label and '01' for negative sentences' label.
+- I used GradientDescentOptimizer for this assignment.
+- My vectors' default dimensions are 200.
+- I prefered ReLu activation function for this assignment.But I got higher accuracy when I used linear activation on out layer in multilayer perceptron. If you want to execute the code with Linear activation you should uncomment the line 31("output_layer = tf.matmul(hidden_layer_2, weights['out']) + biases['out']") and comment lines 28("output_layer = tf.add(tf.matmul(hidden_layer_2, weights['out']), biases['out'])") and 29("output_layer = tf.nn.relu(output_layer)").
+- In our assignment, the learning rate is given us 0.001 default. For this learning rate I gave 15 to training eproch. Because I achieved highest accuracy for this learning rate.
+- I printed the outputs in the console and 'output.txt' file with static name.
+- Example output of the code:
 
 		Epoch: 0001 cost= 152.00443915418114
 		Epoch: 0002 cost= 30.622000756094593
@@ -27,11 +24,11 @@ Student ID : 21328232
 		Optimization Finished!
 
 		Accuracy: 0.7894736842105263 
--First I do optimization,I  display logs per epoch step, then write accuracy as shown .
--My average accuracy is 0.55(%55) for default learning rate and training epoch 5.
--I explain my changes on learning rate and training epochs and my accuracy results on following lines
+- First, I did optimization, and I displayed the logs per epoch step, then wrote accuracy as shown.
+- My average accuracy is 0.55(%55) for default learning rate and training epoch 5.
+- I explained the changes on learning rate and the training epochs and the accuracy results on following lines
 ---------------------------------------------------------------------------
-When I use ReLu activation function on out layer :
+When I used the ReLu activation function on out layer:
 ---------------------------------------------------------------------------
 
 		Learning rate = 0.001
@@ -94,7 +91,7 @@ When I use ReLu activation function on out layer :
 		Optimization Finished!
 		Accuracy: 0.39473684210526316
 ---------------------------------------------------------------------------
-When I use Linear activation function on out layer :
+When I used the Linear activation function on out layer:
 ---------------------------------------------------------------------------
 
 		Learning rate = 0.1
@@ -158,9 +155,9 @@ When I use Linear activation function on out layer :
 		Accuracy: 0.7567567567567568
 
 
-EXPLANATION: We can see clearly we achieved higher accuracy when we use Linear activation function on out layer.I can achieve %85 accuracy when I use Linear activation.
+EXPLANATION: We can see clearly that we achieved higher accuracy when we used the Linear activation function on out layer. We can achieve %85 accuracy when we use Linear activation.
 
-accuracy for ReLu : %45 - %65
-accuracy for Linear : %55 - %85
+The accuracy rate for ReLu : %45 - %65
+The accuracy rate for Linear : %55 - %85
 
-I achieved my best accuracy when learning rate is 0.001, training eproch is 5 and out layer activation function is Linear.
+I achieved the best accuracy when learning rate was 0.001, the training eproch was 5 and the out layer activation function was Linear.
